@@ -1,0 +1,12 @@
+name: CoinmarketCap Adapter
+description: CoinmarketCap Adapter in NodeJS using Serverless Framework.
+node_identifier: coinmarketcap
+platforms:
+  - AWS Lambda
+  - Apache OpenWhisk
+data_sources:
+  - name: Example
+    url: https://example.com
+parameters:
+  - base
+  - quote

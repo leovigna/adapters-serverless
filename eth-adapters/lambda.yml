@@ -1,0 +1,28 @@
+service: eth-adapters
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-east-1
+  environment: ${file(./.env.yml)}
+functions:
+  ecrrecover:
+    handler: handler.ecrrecover
+    events:
+      - http: POST ecrrecover
+  ecrdecrypt:
+    handler: handler.ecrdecrypt
+    events:
+      - http: POST ecrdecrypt
+  ethtx2:
+    handler: handler.ethtx2
+    events:
+      - http: POST ethtx2
+  encodeFunctionCall:
+    handler: handler.encodeFunctionCall
+    events:
+      - http: POST encodeFunctionCall
+
+plugins:
+  - serverless-offline

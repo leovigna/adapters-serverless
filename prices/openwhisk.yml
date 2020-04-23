@@ -1,0 +1,26 @@
+service: prices
+
+provider:
+  name: openwhisk
+  environment: ${file(./.env.yml)}
+
+functions:
+  coinmarketcap:
+    handler: handler.coinmarketcap
+    events:
+      - http: POST /coinmarketcap
+  cryptocompare:
+    handler: handler.cryptocompare
+    events:
+      - http: POST /cryptocompare
+  ccxt:
+    handler: handler.ccxt
+    events:
+      - http: POST /ccxt
+
+plugins:
+  - serverless-openwhisk
+
+apigw:
+  name: prices
+  basepath: /prices

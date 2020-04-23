@@ -1,0 +1,11 @@
+name: Ethereum Transaction 2
+description: Send Web3 Ethereum Transaction using web3 with no limit on data payload. NodeJS using Serverless Framework.
+node_identifier: ethtx2
+platforms:
+  - AWS Lambda
+  - Apache OpenWhisk
+parameters:
+  - address
+  - functionSelector
+  - dataPrefix
+  - value

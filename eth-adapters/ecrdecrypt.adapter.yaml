@@ -1,0 +1,11 @@
+name: Elliptic Curve Integrated Encryption Scheme
+description: Decrypto ECIES encrypted message. NodeJS using Serverless Framework.
+node_identifier: ecrdecrypt
+platforms:
+  - AWS Lambda
+  - Apache OpenWhisk
+parameters:
+  - encrypted.iv
+  - encrypted.ephemPublicKey
+  - encrypted.ciphertext
+  - encrypted.mac

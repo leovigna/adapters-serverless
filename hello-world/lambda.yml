@@ -1,0 +1,19 @@
+service: hello-world
+
+provider:
+  provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-east-1
+  environment: ${file(./.env.yml)}
+
+functions:
+  hello:
+    handler: lambda.hello
+    events:
+      - http: POST hello-world/hello
+      - http: GET hello-world/hello
+
+plugins:
+  - serverless-offline

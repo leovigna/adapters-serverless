@@ -1,0 +1,248 @@
+name: CCXT Adapter
+description: Adapter for CCXT crypto exchange library with support for 100+ exchanges. NodeJS using Serverless Framework.
+node_identifier: ccxt
+platforms:
+  - AWS Lambda
+  - Apache OpenWhisk
+data_sources:
+  - url: https://1btcxe.com
+    name: _1btcxe
+  - url: https://acx.io
+    name: acx
+  - url: https://adara.io
+    name: adara
+  - url: https://anxpro.com
+    name: anxpro
+  - url: https://aofex.com/#/register?key=9763840
+    name: aofex
+  - url: https://www.bcex.top/register?invite_code=758978&lang=en
+    name: bcex
+  - url: https://bequant.io
+    name: bequant
+  - url: https://w2.bibox.com/login/register?invite_code=05Kj3I
+    name: bibox
+  - url: https://b1.run/users/new?code=D3LLBVFT
+    name: bigone
+  - url: https://www.binance.com/?ref=10205187
+    name: binance
+  - url: https://www.binance.je/?ref=35047921
+    name: binanceje
+  - url: https://www.binance.us/?ref=35005074
+    name: binanceus
+  - url: https://bit2c.co.il/Aff/63bfed10-e359-420c-ab5a-ad368dab0baf
+    name: bit2c
+  - url: https://bitbank.cc/
+    name: bitbank
+  - url: https://auth.bitbay.net/ref/jHlbB4mIkdS1
+    name: bitbay
+  - url: https://www.bitfinex.com/?refcode=P61eYxFL
+    name: bitfinex
+  - url: https://www.bitfinex.com/?refcode=P61eYxFL
+    name: bitfinex2
+  - url: https://bitflyer.jp
+    name: bitflyer
+  - url: https://www.bitforex.com/en/invitationRegister?inviterId=1867438
+    name: bitforex
+  - url: https://www.bithumb.com
+    name: bithumb
+  - url: https://www.bitkk.com
+    name: bitkk
+  - url: http://www.bitmart.com/?r=rQCFLh
+    name: bitmart
+  - url: https://bitmax.io/#/register?inviteCode=EL6BXBQM
+    name: bitmax
+  - url: https://www.bitmex.com/register/upZpOX
+    name: bitmex
+  - url: https://bitso.com/?ref=itej
+    name: bitso
+  - url: https://www.bitstamp.net
+    name: bitstamp
+  - url: https://www.bitstamp.net
+    name: bitstamp1
+  - url: https://bittrex.com/Account/Register?referralCode=1ZE-G0G-M3B
+    name: bittrex
+  - url: https://u.bitz.com/register?invite_code=1429193
+    name: bitz
+  - url: https://bl3p.eu
+    name: bl3p
+  - url: https://bleutrade.com
+    name: bleutrade
+  - url: https://braziliex.com/?ref=5FE61AB6F6D67DA885BC98BA27223465
+    name: braziliex
+  - url: https://btc-alpha.com/?r=123788
+    name: btcalpha
+  - url: https://www.btcbox.co.jp/
+    name: btcbox
+  - url: https://btcmarkets.net
+    name: btcmarkets
+  - url: https://m.baobi.com/invite?inv=1765b2
+    name: btctradeim
+  - url: https://btc-trade.com.ua/registration/22689
+    name: btctradeua
+  - url: https://www.btcturk.com
+    name: btcturk
+  - url: https://www.buda.com
+    name: buda
+  - url: https://www.bw.com
+    name: bw
+  - url: https://www.bybit.com/app/register?ref=X7Prm
+    name: bybit
+  - url: https://www.byte-trade.com
+    name: bytetrade
+  - url: https://cex.io/r/0/up105393824/0/
+    name: cex
+  - url: https://chilebit.net
+    name: chilebit
+  - url: https://www.coinbase.com/join/58cbe25a355148797479dbd2
+    name: coinbase
+  - url: https://prime.coinbase.com
+    name: coinbaseprime
+  - url: https://pro.coinbase.com/
+    name: coinbasepro
+  - url: https://coincheck.com
+    name: coincheck
+  - url: https://www.coinegg.com/user/register?invite=523218
+    name: coinegg
+  - url: https://www.coinex.com/register?refer_code=yw5fz
+    name: coinex
+  - url: https://coinfalcon.com/?ref=CFJSVGTUPASB
+    name: coinfalcon
+  - url: https://www.coinfloor.co.uk
+    name: coinfloor
+  - url: https://www.coingi.com/?r=XTPPMC
+    name: coingi
+  - url: https://coinmarketcap.com
+    name: coinmarketcap
+  - url: https://coinmate.io?referral=YTFkM1RsOWFObVpmY1ZjMGREQmpTRnBsWjJJNVp3PT0
+    name: coinmate
+  - url: https://coinone.co.kr
+    name: coinone
+  - url: https://www.coinspot.com.au/register?code=PJURCU
+    name: coinspot
+  - url: https://www.coolcoin.com/user/register?invite_code=bhaega
+    name: coolcoin
+  - url: https://www.coss.io/c/reg?r=OWCMHQVW2Q
+    name: coss
+  - url: https://crex24.com/?refid=slxsjsjtil8xexl9hksr
+    name: crex24
+  - url: https://www.deribit.com/reg-1189.4038
+    name: deribit
+  - url: https://www.digifinex.vip/en-ww/from/DhOzBg/3798****5114
+    name: digifinex
+  - url: https://dsx.uk
+    name: dsx
+  - url: https://exmo.me/?ref=131685
+    name: exmo
+  - url: https://www.exx.com/r/fde4260159e53ab8a58cc9186d35501f?recommQd=1
+    name: exx
+  - url: https://www.fcoin.com/i/Z5P7V
+    name: fcoin
+  - url: https://www.fcoinjp.com
+    name: fcoinjp
+  - url: https://www.flowbtc.com.br
+    name: flowbtc
+  - url: https://foxbit.com.br/exchange
+    name: foxbit
+  - url: https://ftx.com/#a=1623029
+    name: ftx
+  - url: https://www.fybse.se
+    name: fybse
+  - url: https://www.gate.io/signup/2436035
+    name: gateio
+  - url: https://gemini.com/
+    name: gemini
+  - url: https://hitbtc.com/?ref_id=5a5d39a65d466
+    name: hitbtc
+  - url: https://pro.hollaex.com/signup?affiliation_code=QSWA6G
+    name: hollaex
+  - url: https://www.huobi.co/en-us/topic/invited/?invite_code=rwrd3
+    name: huobipro
+  - url: https://www.huobi.com.ru/invite?invite_code=esc74
+    name: huobiru
+  - url: https://ice3x.com?ref=14341802
+    name: ice3x
+  - url: https://idex.market
+    name: idex
+  - url: https://www.independentreserve.com
+    name: independentreserve
+  - url: https://indodax.com/ref/testbitcoincoid/1
+    name: indodax
+  - url: https://www.itbit.com
+    name: itbit
+  - url: https://kkex.com
+    name: kkex
+  - url: https://www.kraken.com
+    name: kraken
+  - url: https://www.kucoin.com/?rcode=E5wkqe
+    name: kucoin
+  - url: https://kuna.io?r=kunaid-gvfihe8az7o4
+    name: kuna
+  - url: https://www.lakebtc.com
+    name: lakebtc
+  - url: https://latoken.com
+    name: latoken
+  - url: https://www.lbex.io/invite?icode=7QCY
+    name: lbank
+  - url: https://www.liquid.com?affiliate=SbzC62lt30976
+    name: liquid
+  - url: https://livecoin.net/?from=Livecoin-CQ1hfx44
+    name: livecoin
+  - url: https://www.luno.com/invite/44893A
+    name: luno
+  - url: https://www.lykke.com
+    name: lykke
+  - url: https://www.mercadobitcoin.com.br
+    name: mercado
+  - url: https://mixcoins.com
+    name: mixcoins
+  - url: https://oceanex.pro/signup?referral=VE24QX
+    name: oceanex
+  - url: https://www.okcoin.com/account/register?flag=activity&channelId=600001513
+    name: okcoin
+  - url: https://www.okex.com/join/1888677
+    name: okex
+  - url: https://www.paymium.com
+    name: paymium
+  - url: https://www.poloniex.com/?utm_source=ccxt&utm_medium=web
+    name: poloniex
+  - url: https://www.rightbtc.com
+    name: rightbtc
+  - url: https://www.southxchange.com
+    name: southxchange
+  - url: https://app.stex.com?ref=36416021
+    name: stex
+  - url: https://stronghold.co
+    name: stronghold
+  - url: https://surbitcoin.com
+    name: surbitcoin
+  - url: https://theocean.trade
+    name: theocean
+  - url: https://therocktrading.com
+    name: therock
+  - url: http://bit.ly/2IX0LrM
+    name: tidebit
+  - url: https://tidex.com/exchange/?ref=57f5638d9cd7
+    name: tidex
+  - url: https://timex.io/?refcode=1x27vNkTbP1uwkCck
+    name: timex
+  - url: https://www.topliq.com
+    name: topq
+  - url: https://upbit.com
+    name: upbit
+  - url: https://www.vaultoro.com
+    name: vaultoro
+  - url: https://vbtc.exchange
+    name: vbtc
+  - url: https://whitebit.com/referral/d9bdf40e-28f2-4b52-b2f9-cd1415d82963
+    name: whitebit
+  - url: https://xbtce.com/?agent=XX97BTCXXXG687021000B
+    name: xbtce
+  - url: https://www.yobit.net
+    name: yobit
+  - url: https://zaif.jp
+    name: zaif
+  - url: https://www.zb.com
+    name: zb
+parameters:
+  - exchange
+  - ticker

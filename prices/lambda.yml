@@ -1,0 +1,26 @@
+service: prices
+
+provider:
+  provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-east-1
+  environment: ${file(./.env.yml)}
+
+functions:
+  coinmarketcap:
+    handler: lambda.coinmarketcap
+    events:
+      - http: POST prices/coinmarketcap
+  cryptocompare:
+    handler: lambda.cryptocompare
+    events:
+      - http: POST prices/cryptocompare
+  ccxt:
+    handler: lambda.ccxt
+    events:
+      - http: POST prices/ccxt
+
+plugins:
+  - serverless-offline

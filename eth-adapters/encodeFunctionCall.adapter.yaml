@@ -1,0 +1,9 @@
+name: Encode Function Call
+description: Encode Web3 function call. NodeJS using Serverless Framework.
+node_identifier: encodeFunctionCall
+platforms:
+  - AWS Lambda
+  - Apache OpenWhisk
+parameters:
+  - jsonInterface
+  - parameters

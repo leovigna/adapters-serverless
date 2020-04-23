@@ -1,0 +1,12 @@
+name: Cryptocompare Adapter
+description: Cryptocompare Adapter in NodeJS using Serverless Framework.
+node_identifier: cryptocompare
+platforms:
+  - AWS Lambda
+  - Apache OpenWhisk
+data_sources:
+  - name: Example
+    url: https://example.com
+parameters:
+  - base
+  - quote

@@ -1,0 +1,19 @@
+service: hello-world
+
+provider:
+  name: openwhisk
+  environment: ${file(./.env.yml)}
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http: POST /hello
+      - http: GET /hello
+
+plugins:
+  - serverless-openwhisk
+
+apigw:
+  name: hello-world
+  basepath: /hello-world

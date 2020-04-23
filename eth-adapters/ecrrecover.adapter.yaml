@@ -1,0 +1,8 @@
+name: Elliptic Curve Recovery
+description: Recover public key from signed message. NodeJS using Serverless Framework.
+node_identifier: ecrrecover
+platforms:
+  - AWS Lambda
+  - Apache OpenWhisk
+parameters:
+  - signature

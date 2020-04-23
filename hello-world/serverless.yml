@@ -1,0 +1,22 @@
+service: hello-word
+
+# Remember to install project dependencies to register the provider plugin.
+# $ npm install
+provider:
+  name: openwhisk
+  stage: dev
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http: POST
+      - http: GET
+
+plugins:
+  - serverless-openwhisk
+
+resources:
+  apigw:
+    name: hello
+    basepath: /hello

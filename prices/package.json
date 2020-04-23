@@ -1,0 +1,19 @@
+{
+    "name": "prices",
+    "version": "1.0.0",
+    "description": "Sample OpenWhisk NodeJS serverless framework service.",
+    "main": "handler.js",
+    "keywords": [
+        "serverless",
+        "openwhisk"
+    ],
+    "devDependencies": {
+        "serverless-offline": "^6.1.4",
+        "serverless-openwhisk": ">=0.13.0"
+    },
+    "dependencies": {
+        "ccxt": "^1.26.78",
+        "request": "^2.88.0",
+        "request-promise-native": "^1.0.8"
+    }
+}

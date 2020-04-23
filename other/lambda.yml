@@ -1,0 +1,95 @@
+app: vulcan
+service: adapters-serverless
+
+# You can pin your service to only deploy with a specific Serverless version
+# Check out our docs for more details
+# frameworkVersion: "=X.X.X"
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-east-1
+  environment: ${file(./.env.yml)}
+functions:
+  slack:
+    handler: handler.slack
+    events:
+      - http:
+          path: slack
+          method: post
+  nodestats:
+    handler: handler.nodestats
+    events:
+      - http:
+          path: nodestats
+          method: post
+  jsonmask:
+    handler: handler.jsonmask
+    events:
+      - http:
+          path: jsonmask
+          method: post
+  oauth:
+    handler: handler.oauth
+    events:
+      - http:
+          path: oauth
+          method: post
+  youtubeapi:
+    handler: handler.youtube
+    events:
+      - http:
+          path: youtube
+          method: post
+  youtubeLikes:
+    handler: handler.youtubeLikes
+    events:
+      - http:
+          path: youtube/likes
+          method: post
+  youtubeSubscriptions:
+    handler: handler.youtubeSubscriptions
+    events:
+      - http:
+          path: youtube/subscriptions
+          method: post
+  youtubeVideos:
+    handler: handler.youtubeVideos
+    events:
+      - http:
+          path: youtube/videos
+          method: post
+  randomAddressAddress:
+    handler: handler.randomAddressAddress
+    events:
+      - http:
+          path: randomAddressAddress
+          method: post
+  randomAddressID:
+    handler: handler.randomAddressID
+    events:
+      - http:
+          path: randomAddressID
+          method: post
+  twitchOAuth:
+    handler: handler.twitchOAuth
+    events:
+      - http:
+          path: twitch/oauth
+          method: post
+  twitchViewReward:
+    handler: handler.twitchViewReward
+    events:
+      - http:
+          path: twitch/viewReward
+          method: post
+  proxy:
+    handler: handler.proxy
+    events:
+      - http:
+          path: proxy
+          method: get
+
+plugins:
+  - serverless-offline

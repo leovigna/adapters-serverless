@@ -1,0 +1,30 @@
+service: eth-adapters
+
+provider:
+  name: openwhisk
+  environment: ${file(./.env.yml)}
+
+functions:
+  ecrrecover:
+    handler: handler.ecrrecover
+    events:
+      - http: POST /ecrrecover
+  ecrdecrypt:
+    handler: handler.ecrdecrypt
+    events:
+      - http: POST /ecrdecrypt
+  ethtx2:
+    handler: handler.ethtx2
+    events:
+      - http: POST /ethtx2
+  encodeFunctionCall:
+    handler: handler.encodeFunctionCall
+    events:
+      - http: POST /encodeFunctionCall
+
+plugins:
+  - serverless-openwhisk
+
+apigw:
+  name: eth-adapters
+  basepath: /eth-adapters
