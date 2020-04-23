@@ -1,0 +1,9 @@
+name: CCXT Adapter
+description: Adapter for CCXT crypto exchange library with support for 100+ exchanges. NodeJS using Serverless Framework.
+node_identifier: ccxt
+platforms:
+  - AWS Lambda
+  - Apache OpenWhisk
+parameters:
+  - exchange
+  - ticker
