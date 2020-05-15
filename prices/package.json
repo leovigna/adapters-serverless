@@ -9,7 +9,9 @@
     ],
     "devDependencies": {
         "serverless-offline": "^6.1.4",
-        "serverless-openwhisk": ">=0.13.0"
+        "serverless-openwhisk": ">=0.13.0",
+        "serverless-plugin-typescript": "^1.1.9",
+        "typescript": "^3.8.3"
     },
     "dependencies": {
         "ccxt": "^1.26.78",
