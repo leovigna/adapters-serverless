@@ -1,0 +1,6 @@
+name: Coinbase Oracle
+description: Get Coinbase-signed price data
+node_identifier: coinbase-oracle
+platforms:
+  - AWS Lambda
+  - Apache OpenWhisk
